@@ -23,7 +23,7 @@ export function parsePurchase(text: string): { purchase?: Purchase; missing: str
   const missing = [!quantity && 'quantity', !product && 'product', !price && 'price', !supplier && 'supplier'].filter((v): v is string => Boolean(v));
   return missing.length ? { missing } : { missing, purchase: { quantity, product, price, supplier } };
 }
-export function money(value: number, lang: Language = 'pt') { return new Intl.NumberFormat(lang === 'pt' ? 'pt-BR' : 'en-US', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(value); }
+export function money(value: number, lang: Language = 'pt', precision = 0) { return new Intl.NumberFormat(lang === 'pt' ? 'pt-BR' : 'en-US', { style: 'currency', currency: 'BRL', minimumFractionDigits: precision, maximumFractionDigits: precision }).format(value); }
 export function purchasePhrase(p: Purchase, lang: Language) {
   const price = new Intl.NumberFormat(lang === 'pt' ? 'pt-BR' : 'en-US', { style: 'currency', currency: 'BRL' }).format(p.price);
   return lang === 'pt' ? `Comprei ${p.quantity} unidades de ${p.product}, por ${price} cada, do fornecedor ${p.supplier}.` : `I bought ${p.quantity} units of ${p.product}, at ${price} each, from supplier ${p.supplier}.`;

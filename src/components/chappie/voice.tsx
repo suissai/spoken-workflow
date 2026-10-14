@@ -5,10 +5,10 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/compone
 import { getCopy } from '@/lib/chappie/content';
 import { parsePurchase, purchasePhrase, money, type Purchase, type Language } from '@/lib/chappie/logic';
 export function useSpeech(lang: Language) {
- const [speaking,setSpeaking] = useState(false); const [error,setError] = useState('');
- const stop = () => { window.speechSynthesis?.cancel(); setSpeaking(false); };
+ const [speaking,setSpeaking] = useState(false); const [error,setError] = useState(''); const generation = useRef(0);
+ const stop = () => { generation.current++; window.speechSynthesis?.cancel(); setSpeaking(false); };
  useEffect(() => { window.speechSynthesis?.cancel(); setSpeaking(false); setError(''); return () => window.speechSynthesis?.cancel(); },[lang]);
- const speak = (segments: string[]) => { const c = getCopy(lang); if (!('speechSynthesis' in window)) {setError(c.speechUnsupported); return;} stop(); setError(''); setSpeaking(true); let index=0; const next=()=>{const text=segments[index++]; if(!text){setSpeaking(false);return;} const utterance=new SpeechSynthesisUtterance(text); utterance.lang=lang==='pt'?'pt-BR':'en-US'; utterance.rate=.98; utterance.onend=next; utterance.onerror=(event)=>{if(event.error!=='canceled' && event.error!=='interrupted')setError(c.speechError);setSpeaking(false);}; window.speechSynthesis.speak(utterance);}; next(); };
+ const speak = (segments: string[]) => { const c = getCopy(lang); if (!('speechSynthesis' in window)) {setError(c.speechUnsupported); return;} stop(); const run = generation.current; setError(''); setSpeaking(true); let index=0; const next=()=>{if(run!==generation.current)return;const text=segments[index++]; if(!text){setSpeaking(false);return;} const utterance=new SpeechSynthesisUtterance(text); utterance.lang=lang==='pt'?'pt-BR':'en-US'; utterance.rate=.98; utterance.onend=next; utterance.onerror=(event)=>{if(run!==generation.current)return;if(event.error!=='canceled' && event.error!=='interrupted')setError(c.speechError);setSpeaking(false);}; window.speechSynthesis.speak(utterance);}; next(); };
  return {speak,stop,speaking,error};
 }
 type Recognition = {lang:string; interimResults:boolean; onresult:((event:{results:{[key:number]:{[key:number]:{transcript:string}};length:number}})=>void)|null; onerror:(()=>void)|null; onend:(()=>void)|null; start:()=>void;stop:()=>void};
