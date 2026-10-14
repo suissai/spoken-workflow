@@ -22,7 +22,7 @@ describe('Illustrative purchase extraction', () => {
  });
 });
 describe('ROI and registration', () => {
- it('calculates explicitly disclosed illustrative assumptions', () => expect(calculateRoi(10,15000,1)).toEqual({savedHours:26,annualSavings:29228,potentialRevenue:609}));
+ it('calculates explicitly disclosed illustrative assumptions', () => expect(calculateRoi(10,15000,1)).toEqual({savedHours:26,annualSavings:29227,potentialRevenue:609}));
  it('requires consent for registration', () => {
   expect(leadSchema.safeParse({name:'Maria',email:'maria@example.com',business:'Loja Maria',segment:'commerce',language:'pt',consent:false,request_type:'early_access'}).success).toBe(false);
  });

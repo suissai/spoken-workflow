@@ -18,7 +18,7 @@ export function parsePurchase(text: string): { purchase?: Purchase; missing: str
   const supplierMatch = text.match(/(?:fornecedor|supplier|from)\s*:?\s*(.+?)[.!]?$/i);
   const quantity = quantityMatch ? Number(quantityMatch[1]) : 0;
   const product = quantityMatch?.[2]?.trim().replace(/^(?:de|of)\s+/i, '') || '';
-  const price = priceMatch ? Number(priceMatch[1].replace(',', '.')) : 0;
+  const price = priceMatch ? Number((priceMatch[1] || '').replace(',', '.')) : 0;
   const supplier = supplierMatch?.[1]?.trim().replace(/[.!]$/, '') || '';
   const missing = [!quantity && 'quantity', !product && 'product', !price && 'price', !supplier && 'supplier'].filter((v): v is string => Boolean(v));
   return missing.length ? { missing } : { missing, purchase: { quantity, product, price, supplier } };
