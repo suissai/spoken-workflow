@@ -25,3 +25,52 @@
 .flow-detail{animation:flow-enter .3s ease-out;}
 @media(max-width:767px){.hero-content{padding-top:32px;padding-bottom:66px;}.hero h1{font-size:39px;}.hero-eyebrow{margin-bottom:20px;}.hero-eyebrow{font-size:0;}.hero-eyebrow::after{content:"OUTCOME AS A PLATFORM";font-size:8px;}.hero-intro{margin-top:16px;font-size:15px;}.hero-live{margin-top:25px;}.hero-description{font-size:11px;}.hero{min-height:735px;}}
 @media(max-width:380px){.hero h1{font-size:35px;}}
+
+/* Segment pages, solutions modal, text-gradient hovers */
+@keyframes text-gradient-move{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.chappie-site h1,.chappie-site h2,.chappie-site h3,.chappie-site a{background-image:linear-gradient(90deg,var(--primary),var(--cyan),var(--success),var(--primary));background-size:200% auto;-webkit-background-clip:text;background-clip:text;transition:color .3s;}
+.chappie-site h1:hover,.chappie-site h2:hover,.chappie-site h3:hover,.chappie-site a:not(.solution-button):not(.whatsapp-fixed):not(.segment-cta-button):hover,.chappie-site h1:hover span{color:transparent;animation:text-gradient-move 2s linear infinite;}
+.nav-solutions{color:inherit;font:inherit;cursor:pointer;transition:color .3s;}.nav-solutions:hover{color:var(--primary);}
+.solutions-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-top:8px;max-height:65vh;overflow:auto;}
+.solution-button{position:relative;display:flex;flex-direction:column;align-items:center;gap:10px;padding:20px 10px;border:1px solid var(--border);border-radius:10px;background:var(--card);font-size:13px;overflow:hidden;isolation:isolate;transition:border-color .3s;}
+.solution-button:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(135deg,var(--primary),var(--cyan),var(--success));background-size:200% 200%;opacity:0;transition:opacity .35s;}
+.solution-button:hover{border-color:var(--primary);color:var(--primary-foreground);}.solution-button:hover:before{opacity:.85;animation:text-gradient-move 3s linear infinite;}
+.solution-emoji{font-size:30px;display:inline-block;transition:transform .3s ease;}.solution-button:hover .solution-emoji{transform:scale(1.2);}
+.segment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+.segment-card{border:1px solid var(--border);border-radius:10px;background:var(--card);padding:22px;display:flex;flex-direction:column;gap:12px;transition:transform .3s,border-color .3s;}.segment-card:hover{transform:translateY(-4px);border-color:var(--primary);}.segment-card h3{font-size:15px;font-weight:500;}
+.segment-price{max-width:460px;border:1px solid var(--primary);border-radius:12px;background:var(--card);padding:30px;box-shadow:var(--button-glow);}.segment-price small{font-size:14px;color:var(--muted-foreground);}.segment-price ul{margin:18px 0;display:grid;gap:10px;font-size:13px;}.segment-price li{display:flex;gap:8px;align-items:center;}.segment-price svg{color:var(--success);}
+.segment-cta{text-align:center;}.segment-cta h2{font-size:30px;max-width:760px;margin:0 auto 24px;}
+.segment-cta-button{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 24px;border-radius:8px;background:var(--primary);color:var(--primary-foreground);box-shadow:var(--button-glow);transition:transform .3s;}.segment-cta-button:hover{transform:translateY(-2px);}
+.whatsapp-fixed{position:fixed;z-index:60;bottom:20px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:8px;height:50px;padding:0 32px;border-radius:999px;background:var(--success);color:var(--background);font-weight:600;box-shadow:var(--panel-shadow);transition:transform .3s;}.whatsapp-fixed:hover{transform:translateX(-50%) translateY(-3px);}
+@media(max-width:767px){.whatsapp-fixed{left:0;right:0;bottom:0;width:100%;transform:none;border-radius:0;}.whatsapp-fixed:hover{transform:none;}.segment-cta h2{font-size:24px;}.solutions-grid{grid-template-columns:repeat(2,1fr);}}
+/* Per-page accent overrides */
+.page-comercio.chappie-site{--primary:oklch(.68 .17 60) !important;}
+.page-comercio.hero-title span,.page-comercio.chappie-site .hero-title span{color:oklch(.75 .15 60) !important;}
+.page-delivery.chappie-site{--primary:oklch(.68 .17 25) !important;}
+.page-delivery.hero-title span,.page-delivery.chappie-site .hero-title span{color:oklch(.75 .15 25) !important;}
+.page-taxi.chappie-site{--primary:oklch(.68 .17 90) !important;}
+.page-taxi.hero-title span,.page-taxi.chappie-site .hero-title span{color:oklch(.75 .15 90) !important;}
+.page-farmacia.chappie-site{--primary:oklch(.68 .17 150) !important;}
+.page-farmacia.hero-title span,.page-farmacia.chappie-site .hero-title span{color:oklch(.75 .15 150) !important;}
+.page-imobiliaria.chappie-site{--primary:oklch(.68 .17 200) !important;}
+.page-imobiliaria.hero-title span,.page-imobiliaria.chappie-site .hero-title span{color:oklch(.75 .15 200) !important;}
+.page-odonto.chappie-site{--primary:oklch(.68 .17 210) !important;}
+.page-odonto.hero-title span,.page-odonto.chappie-site .hero-title span{color:oklch(.75 .15 210) !important;}
+.page-consultorio.chappie-site{--primary:oklch(.68 .17 230) !important;}
+.page-consultorio.hero-title span,.page-consultorio.chappie-site .hero-title span{color:oklch(.75 .15 230) !important;}
+.page-petshop.chappie-site{--primary:oklch(.68 .17 40) !important;}
+.page-petshop.hero-title span,.page-petshop.chappie-site .hero-title span{color:oklch(.75 .15 40) !important;}
+.page-psiquiatra.chappie-site{--primary:oklch(.68 .17 280) !important;}
+.page-psiquiatra.hero-title span,.page-psiquiatra.chappie-site .hero-title span{color:oklch(.75 .15 280) !important;}
+.page-psicologo.chappie-site{--primary:oklch(.68 .17 300) !important;}
+.page-psicologo.hero-title span,.page-psicologo.chappie-site .hero-title span{color:oklch(.75 .15 300) !important;}
+.page-dropshipping.chappie-site{--primary:oklch(.68 .17 330) !important;}
+.page-dropshipping.hero-title span,.page-dropshipping.chappie-site .hero-title span{color:oklch(.75 .15 330) !important;}
+.page-distribuidora.chappie-site{--primary:oklch(.68 .17 170) !important;}
+.page-distribuidora.hero-title span,.page-distribuidora.chappie-site .hero-title span{color:oklch(.75 .15 170) !important;}
+.page-advogado.chappie-site{--primary:oklch(.68 .17 15) !important;}
+.page-advogado.hero-title span,.page-advogado.chappie-site .hero-title span{color:oklch(.75 .15 15) !important;}
+.page-contador.chappie-site{--primary:oklch(.68 .17 250) !important;}
+.page-contador.hero-title span,.page-contador.chappie-site .hero-title span{color:oklch(.75 .15 250) !important;}
+.page-consultor.chappie-site{--primary:oklch(.68 .17 120) !important;}
+.page-consultor.hero-title span,.page-consultor.chappie-site .hero-title span{color:oklch(.75 .15 120) !important;}
