@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SegmentRouteImport } from './routes/$segment'
 import { Route as EnRouteImport } from './routes/en'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SegmentRoute = SegmentRouteImport.update({
+  id: '/$segment',
+  path: '/$segment',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EnRoute = EnRouteImport.update({
@@ -25,27 +31,31 @@ const EnRoute = EnRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$segment': typeof SegmentRoute
   '/en': typeof EnRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$segment': typeof SegmentRoute
   '/en': typeof EnRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$segment': typeof SegmentRoute
   '/en': typeof EnRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/en'
+  fullPaths: '/' | '/$segment' | '/en'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/en'
-  id: '__root__' | '/' | '/en'
+  to: '/' | '/$segment' | '/en'
+  id: '__root__' | '/' | '/$segment' | '/en'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SegmentRoute: typeof SegmentRoute
   EnRoute: typeof EnRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/$segment': {
+      id: '/$segment'
+      path: '/$segment'
+      fullPath: '/$segment'
+      preLoaderRoute: typeof SegmentRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/en': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SegmentRoute: SegmentRoute,
   EnRoute: EnRoute,
 }
 export const routeTree = rootRouteImport
