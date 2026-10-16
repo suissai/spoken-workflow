@@ -1,86 +1,527 @@
 [
-  {
-    "page": "delivery",
-    "bodyClass": "page-delivery",
-    "image": "https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Delivery"
+ {
+  "page": "comercio",
+  "bodyClass": "page-comercio",
+  "emoji": "🛍️",
+  "name": "Comércio",
+  "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Comercio",
+  "cta": {
+   "text": "Seu comércio funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
   },
-  {
-    "page": "taxi",
-    "bodyClass": "page-taxi",
-    "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Taxi"
-  },
-  {
-    "page": "farmacia",
-    "bodyClass": "page-farmacia",
-    "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Farmacia"
-  },
-  {
-    "page": "imobiliaria",
-    "bodyClass": "page-imobiliaria",
-    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Imobiliaria"
-  },
-  {
-    "page": "odonto",
-    "bodyClass": "page-odonto",
-    "image": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Odonto"
-  },
-  {
-    "page": "consultorio",
-    "bodyClass": "page-consultorio",
-    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Consultorio"
-  },
-  {
-    "page": "petshop",
-    "bodyClass": "page-petshop",
-    "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Petshop"
-  },
-  {
-    "page": "psiquiatra",
-    "bodyClass": "page-psiquiatra",
-    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Psiquiatra"
-  },
-  {
-    "page": "psicologo",
-    "bodyClass": "page-psicologo",
-    "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Psicologo"
-  },
-  {
-    "page": "dropshipping",
-    "bodyClass": "page-dropshipping",
-    "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Dropshipping"
-  },
-  {
-    "page": "distribuidora",
-    "bodyClass": "page-distribuidora",
-    "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Distribuidora"
-  },
-  {
-    "page": "advogado",
-    "bodyClass": "page-advogado",
-    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Advogado"
-  },
-  {
-    "page": "contador",
-    "bodyClass": "page-contador",
-    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Contador"
-  },
-  {
-    "page": "consultor",
-    "bodyClass": "page-consultor",
-    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1920&q=80",
-    "title": "My.Chappie.Digital Consultor"
+  "features": [
+   "Vendas registradas por áudio",
+   "Estoque atualizado a cada venda",
+   "Contas a pagar e receber organizadas",
+   "Clientes e fiado sob controle"
+  ],
+  "problems": [
+   "Caderninho e planilhas espalhadas",
+   "Estoque que não bate no fim do mês",
+   "Não saber quanto realmente lucrou"
+  ],
+  "pricing": {
+   "plan": "Comércio",
+   "price": 100,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
   }
+ },
+ {
+  "page": "delivery",
+  "bodyClass": "page-delivery",
+  "emoji": "🛵",
+  "name": "Delivery",
+  "image": "https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Delivery",
+  "cta": {
+   "text": "Seu delivery funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Pedidos lançados por áudio",
+   "Controle de entregas e entregadores",
+   "Caixa do dia fechado automaticamente",
+   "Insumos com alerta de reposição"
+  ],
+  "problems": [
+   "Pedidos perdidos entre WhatsApp e papel",
+   "Taxas e repasses difíceis de conferir",
+   "Falta de insumo no horário de pico"
+  ],
+  "pricing": {
+   "plan": "Comércio",
+   "price": 100,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "taxi",
+  "bodyClass": "page-taxi",
+  "emoji": "🚕",
+  "name": "Taxi",
+  "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Taxi",
+  "cta": {
+   "text": "Seu taxi funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Corridas registradas por áudio",
+   "Combustível e manutenção organizados",
+   "Ganhos por dia e por semana",
+   "Lembretes de revisão e documentos"
+  ],
+  "problems": [
+   "Não saber o lucro real das corridas",
+   "Gastos com o carro fora de controle",
+   "Documentos vencendo sem aviso"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "farmacia",
+  "bodyClass": "page-farmacia",
+  "emoji": "💊",
+  "name": "Farmácia",
+  "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Farmacia",
+  "cta": {
+   "text": "Seu farmácia funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Entrada de mercadorias por áudio",
+   "Alertas de validade e ruptura",
+   "Financeiro e fornecedores organizados",
+   "Histórico de clientes recorrentes"
+  ],
+  "problems": [
+   "Produtos vencendo na prateleira",
+   "Compras sem saber o giro real",
+   "Conferência de notas demorada"
+  ],
+  "pricing": {
+   "plan": "Comércio",
+   "price": 100,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "imobiliaria",
+  "bodyClass": "page-imobiliaria",
+  "emoji": "🏠",
+  "name": "Imobiliária",
+  "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Imobiliaria",
+  "cta": {
+   "text": "Seu imobiliária funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Visitas e interessados por áudio",
+   "Follow-up automático de clientes",
+   "Comissões e repasses organizados",
+   "Agenda de imóveis centralizada"
+  ],
+  "problems": [
+   "Leads esquecidos sem retorno",
+   "Comissões controladas em planilha",
+   "Agenda de visitas desencontrada"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "odonto",
+  "bodyClass": "page-odonto",
+  "emoji": "🦷",
+  "name": "Odonto",
+  "image": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Odonto",
+  "cta": {
+   "text": "Seu odonto funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Atendimentos registrados por áudio",
+   "Parcelamentos e recebimentos controlados",
+   "Retornos lembrados automaticamente",
+   "Materiais com alerta de reposição"
+  ],
+  "problems": [
+   "Pacientes que não voltam para o retorno",
+   "Parcelas atrasadas sem cobrança",
+   "Material acabando no meio da agenda"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "consultorio",
+  "bodyClass": "page-consultorio",
+  "emoji": "🩺",
+  "name": "Consultório",
+  "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Consultorio",
+  "cta": {
+   "text": "Seu consultório funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Consultas e recebimentos por áudio",
+   "Agenda e retornos organizados",
+   "Despesas do consultório classificadas",
+   "Relatórios simples do mês"
+  ],
+  "problems": [
+   "Burocracia que toma o tempo do atendimento",
+   "Recebimentos de convênio confusos",
+   "Despesas misturadas com as pessoais"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "petshop",
+  "bodyClass": "page-petshop",
+  "emoji": "🐾",
+  "name": "Petshop",
+  "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Petshop",
+  "cta": {
+   "text": "Seu petshop funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Banhos, tosas e vendas por áudio",
+   "Histórico de cada pet e tutor",
+   "Estoque de rações e produtos",
+   "Lembretes de retorno e vacinas"
+  ],
+  "problems": [
+   "Tutores que esquecem o próximo banho",
+   "Ração acabando sem aviso",
+   "Caixa da loja e serviços misturados"
+  ],
+  "pricing": {
+   "plan": "Comércio",
+   "price": 100,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "psiquiatra",
+  "bodyClass": "page-psiquiatra",
+  "emoji": "🧠",
+  "name": "Psiquiatra",
+  "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Psiquiatra",
+  "cta": {
+   "text": "Seu psiquiatra funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Consultas e honorários por áudio",
+   "Agenda de retornos organizada",
+   "Recibos e despesas classificados",
+   "Visão financeira mensal"
+  ],
+  "problems": [
+   "Tempo perdido com tarefas administrativas",
+   "Honorários e recibos desorganizados",
+   "Retornos difíceis de acompanhar"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "psicologo",
+  "bodyClass": "page-psicologo",
+  "emoji": "💬",
+  "name": "Psicólogo",
+  "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Psicologo",
+  "cta": {
+   "text": "Seu psicólogo funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Sessões e pagamentos por áudio",
+   "Pacotes de sessões controlados",
+   "Lembretes de cobrança gentis",
+   "Recibos organizados"
+  ],
+  "problems": [
+   "Sessões pagas e pendentes misturadas",
+   "Constrangimento ao cobrar pacientes",
+   "Planilhas que ninguém atualiza"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "dropshipping",
+  "bodyClass": "page-dropshipping",
+  "emoji": "📦",
+  "name": "Dropshipping",
+  "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Dropshipping",
+  "cta": {
+   "text": "Seu dropshipping funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Pedidos e fornecedores por áudio",
+   "Margem por produto calculada",
+   "Status de envio acompanhado",
+   "Custos de anúncio organizados"
+  ],
+  "problems": [
+   "Margem real desconhecida",
+   "Pedidos atrasados sem visibilidade",
+   "Fornecedores difíceis de comparar"
+  ],
+  "pricing": {
+   "plan": "Comércio",
+   "price": 100,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "distribuidora",
+  "bodyClass": "page-distribuidora",
+  "emoji": "🚚",
+  "name": "Distribuidora",
+  "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Distribuidora",
+  "cta": {
+   "text": "Seu distribuidora funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Pedidos de clientes por áudio",
+   "Estoque e reposição automáticos",
+   "Rotas e entregas organizadas",
+   "Contas a receber acompanhadas"
+  ],
+  "problems": [
+   "Estoque divergente entre sistema e galpão",
+   "Inadimplência sem acompanhamento",
+   "Pedidos anotados em vários lugares"
+  ],
+  "pricing": {
+   "plan": "Comércio",
+   "price": 100,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "advogado",
+  "bodyClass": "page-advogado",
+  "emoji": "⚖️",
+  "name": "Advogado",
+  "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Advogado",
+  "cta": {
+   "text": "Seu advogado funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Honorários e despesas por áudio",
+   "Prazos e compromissos lembrados",
+   "Clientes e casos organizados",
+   "Cobranças acompanhadas"
+  ],
+  "problems": [
+   "Honorários esquecidos de cobrar",
+   "Despesas de processos sem reembolso",
+   "Agenda e prazos espalhados"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "contador",
+  "bodyClass": "page-contador",
+  "emoji": "📊",
+  "name": "Contador",
+  "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Contador",
+  "cta": {
+   "text": "Seu contador funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Tarefas de clientes por áudio",
+   "Honorários recorrentes controlados",
+   "Pendências de documentos acompanhadas",
+   "Visão da carteira de clientes"
+  ],
+  "problems": [
+   "Clientes que atrasam documentos",
+   "Honorários sem reajuste ou controle",
+   "Retrabalho com informações dispersas"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ },
+ {
+  "page": "consultor",
+  "bodyClass": "page-consultor",
+  "emoji": "💼",
+  "name": "Consultor",
+  "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1920&q=80",
+  "imageMobile": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&h=1600&q=80",
+  "title": "Chappie Consultor",
+  "cta": {
+   "text": "Seu consultor funcionando com apenas um áudio. Teste por 3 meses e veja a diferença na rotina.",
+   "button": "Quero testar o Chappie"
+  },
+  "features": [
+   "Projetos e horas por áudio",
+   "Propostas e follow-ups automáticos",
+   "Faturamento por cliente",
+   "Despesas de viagem organizadas"
+  ],
+  "problems": [
+   "Horas trabalhadas que não viram fatura",
+   "Propostas sem acompanhamento",
+   "Fluxo de caixa irregular"
+  ],
+  "pricing": {
+   "plan": "Profissional Autônomo",
+   "price": 50,
+   "period": "mês",
+   "trial": "3 meses de teste para novos usuários elegíveis, com condições informadas antes da contratação.",
+   "items": [
+    "Comandos por áudio ilimitados no plano",
+    "Agentes de financeiro, clientes e estoque",
+    "Preços de uso informados antes de confirmar"
+   ]
+  }
+ }
 ]
