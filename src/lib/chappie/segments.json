@@ -1,0 +1,86 @@
+[
+  {
+    "page": "delivery",
+    "bodyClass": "page-delivery",
+    "image": "https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Delivery"
+  },
+  {
+    "page": "taxi",
+    "bodyClass": "page-taxi",
+    "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Taxi"
+  },
+  {
+    "page": "farmacia",
+    "bodyClass": "page-farmacia",
+    "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Farmacia"
+  },
+  {
+    "page": "imobiliaria",
+    "bodyClass": "page-imobiliaria",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Imobiliaria"
+  },
+  {
+    "page": "odonto",
+    "bodyClass": "page-odonto",
+    "image": "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Odonto"
+  },
+  {
+    "page": "consultorio",
+    "bodyClass": "page-consultorio",
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Consultorio"
+  },
+  {
+    "page": "petshop",
+    "bodyClass": "page-petshop",
+    "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Petshop"
+  },
+  {
+    "page": "psiquiatra",
+    "bodyClass": "page-psiquiatra",
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Psiquiatra"
+  },
+  {
+    "page": "psicologo",
+    "bodyClass": "page-psicologo",
+    "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Psicologo"
+  },
+  {
+    "page": "dropshipping",
+    "bodyClass": "page-dropshipping",
+    "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Dropshipping"
+  },
+  {
+    "page": "distribuidora",
+    "bodyClass": "page-distribuidora",
+    "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Distribuidora"
+  },
+  {
+    "page": "advogado",
+    "bodyClass": "page-advogado",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Advogado"
+  },
+  {
+    "page": "contador",
+    "bodyClass": "page-contador",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Contador"
+  },
+  {
+    "page": "consultor",
+    "bodyClass": "page-consultor",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1920&q=80",
+    "title": "My.Chappie.Digital Consultor"
+  }
+]
